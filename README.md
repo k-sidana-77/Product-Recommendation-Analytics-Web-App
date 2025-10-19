@@ -1,83 +1,70 @@
-Furniture AI: Full-Stack Recommendation & Analytics Engine
+# 🪑 Furniture AI: Full-Stack Recommendation & Analytics Engine
 
-This repository contains the source code for a comprehensive, full-stack web application designed to provide AI-powered furniture recommendations, data-driven analytics, and generative content creation. The project leverages a modern tech stack, including FastAPI for the backend, React for the frontend, and a suite of AI tools for its core intelligence.
+This repository contains the source code for a **full-stack web application** that provides **AI-powered furniture recommendations**, **data-driven analytics**, and **generative content creation**.  
+It integrates **FastAPI**, **React**, and **state-of-the-art AI tools** to deliver an intelligent, conversational, and interactive user experience.
 
-✨ Features
+---
 
-Conversational Product Recommendation: A user-friendly chat interface where users can describe the furniture they're looking for in natural language and receive relevant product recommendations.
+## ✨ Features
 
-Data Analytics Dashboard: An interactive dashboard that visualizes key metrics and trends from the product dataset, including top brands, price distribution, and popular categories.
+- 💬 **Conversational Product Recommendation**  
+  A friendly chat interface where users can describe the furniture they're looking for (e.g., *“a modern wooden desk”*) and receive relevant product recommendations powered by AI and vector search.
 
-Generative AI Descriptions: A feature that uses a large language model (LLM) to generate new, creative, and engaging product descriptions based on a title and brand.
+- 📊 **Data Analytics Dashboard**  
+  Interactive visualizations showing insights like top brands, price distributions, and popular furniture categories.
 
-🛠️ Tech Stack
+- 🧠 **Generative AI Descriptions**  
+  Uses a Large Language Model (LLM) to generate creative and engaging product descriptions from simple inputs like title and brand.
 
-🚀 Setup and Installation
+---
 
-Follow these instructions to get the project running locally on your machine.
+## 🛠️ Tech Stack
 
-Prerequisites
+| Layer | Technology |
+|--------|-------------|
+| **Frontend** | React + Vite + Tailwind CSS |
+| **Backend** | FastAPI (Python) |
+| **Database** | Pinecone (Vector Database) |
+| **AI Models** | OpenAI API (LLMs for text generation + embeddings) |
+| **Environment** | Node.js, Python, Yarn |
 
-Python 3.8+
+---
 
-Node.js 18+ and Yarn
+## 🚀 Setup & Installation
 
-A Pinecone account and API key
+Follow the steps below to get the project running locally.
 
-An OpenAI account and API key
+### 🔧 Prerequisites
 
-1. Backend Setup
+Make sure you have the following installed:
 
-First, set up the Python server which powers all the AI and data logic.
+- Python **3.8+**
+- Node.js **18+**
+- Yarn
+- [Pinecone Account](https://www.pinecone.io/) + API Key
+- [OpenAI Account](https://platform.openai.com/) + API Key
 
+---
+
+### 🧩 Backend Setup
+
+The backend handles AI logic, embedding creation, and product data analytics.
+
+```bash
 # 1. Navigate to the backend directory
 cd backend/
 
-# 2. Create and configure your environment variables
-# Create a file named .env and add your API keys to it:
-# PINECONE_API_KEY="YOUR_PINECONE_API_KEY"
-# OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+# 2. Create and configure environment variables
+# Create a file named `.env` and add the following lines:
+PINECONE_API_KEY="YOUR_PINECONE_API_KEY"
+OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 
 # 3. Install Python dependencies
 pip install -r requirements.txt
 
 # 4. Populate the Vector Database (one-time setup)
-# This script creates the 'ikarus-products' index in Pinecone and fills it with your product data.
-# This will take a few minutes.
+# This creates the 'ikarus-products' index in Pinecone and uploads product data.
 python create_embeddings.py
 
 # 5. Run the FastAPI server
 uvicorn main:app --reload
-
-
-The backend server will now be running at http://127.0.0.1:8000.
-
-2. Frontend Setup
-
-In a new, separate terminal, set up the React user interface.
-
-# 1. Navigate to the frontend directory
-cd frontend/
-
-# 2. Install frontend dependencies using Yarn
-yarn install
-
-# 3. Run the React development server
-yarn dev
-
-
-The frontend application will now be running at http://localhost:5173.
-
-🖥️ Usage
-
-Once both servers are running, open your web browser and navigate to http://localhost:5173.
-
-Chat: Use the chat interface to type queries like "a comfortable armchair" or "a modern wooden desk" to get product recommendations.
-
-Analytics: Click the "Analytics" button in the header to view the data dashboard.
-
-Generator: Click the "Generator" button, enter a product title and brand, and click "Generate Description" to get an AI-written description.
-
-Important Note on Generative AI
-
-The description generator feature relies on the OpenAI API. The free trial credits for new accounts may expire. To ensure this feature works, you must have an active billing plan and a positive credit balance on your OpenAI account. The application is designed to handle API quota errors gracefully.
