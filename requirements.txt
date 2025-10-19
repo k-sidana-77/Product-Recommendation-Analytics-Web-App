@@ -1,0 +1,19 @@
+# fastapi
+# uvicorn[standard]
+# pandas
+# sentence-transformers
+# pinecone
+# python-dotenv
+# pydantic==1.10.13
+# langchain
+# langchain-openai
+pinecone
+fastapi
+uvicorn[standard]
+python-dotenv
+sentence-transformers
+pandas
+langchain
+pydantic==1.10.13
+langchain-openai
+langchain-core

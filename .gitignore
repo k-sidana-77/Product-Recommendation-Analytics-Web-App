@@ -1,0 +1,19 @@
+# Node
+my-furniture-app-v2/node_modules/
+my-furniture-app-v2/dist/
+my-furniture-app-v2/.vite/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
