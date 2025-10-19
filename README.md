@@ -2,9 +2,7 @@ Furniture AI: Full-Stack Recommendation & Analytics Engine
 
 This repository contains the source code for a comprehensive, full-stack web application designed to provide AI-powered furniture recommendations, data-driven analytics, and generative content creation. The project leverages a modern tech stack, including FastAPI for the backend, React for the frontend, and a suite of AI tools for its core intelligence.
 
-<!-- Placeholder image -->
-
-Features
+✨ Features
 
 Conversational Product Recommendation: A user-friendly chat interface where users can describe the furniture they're looking for in natural language and receive relevant product recommendations.
 
@@ -12,42 +10,9 @@ Data Analytics Dashboard: An interactive dashboard that visualizes key metrics a
 
 Generative AI Descriptions: A feature that uses a large language model (LLM) to generate new, creative, and engaging product descriptions based on a title and brand.
 
-Tech Stack
+🛠️ Tech Stack
 
-Backend: Python, FastAPI
-
-Frontend: JavaScript, React, Vite, Tailwind CSS
-
-Vector Database: Pinecone
-
-AI / ML:
-
-Embeddings: Sentence-Transformers (from Hugging Face)
-
-Generative AI: OpenAI (via API)
-
-Integration: LangChain & LangChain Expression Language (LCEL)
-
-Data Processing: Pandas
-
-Project Structure
-
-.
-├── backend/                  # Contains all Python backend code
-│   ├── .env                  # Environment variables (API keys)
-│   ├── main.py               # Main FastAPI application
-│   ├── create_embeddings.py  # Script to populate the vector DB
-│   ├── requirements.txt      # Python dependencies
-│   └── cleaned_product_data.csv # The dataset
-│
-└── frontend/                 # Contains all React frontend code
-    ├── src/
-    │   └── App.jsx           # Main React component with all UI logic
-    ├── package.json          # Frontend dependencies
-    └── ...
-
-
-Setup and Installation
+🚀 Setup and Installation
 
 Follow these instructions to get the project running locally on your machine.
 
@@ -103,7 +68,7 @@ yarn dev
 
 The frontend application will now be running at http://localhost:5173.
 
-Usage
+🖥️ Usage
 
 Once both servers are running, open your web browser and navigate to http://localhost:5173.
 
